@@ -1,0 +1,43 @@
+# Blender MTL File: 'SAMPLE.blend'
+# Material Count: 4
+
+newmtl G_UHG124
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\USER\\Documents\\Desktop\\1126\\기_유희경\\G_UHG124.jpg
+
+newmtl JD_G_JAI61
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\USER\\Documents\\Desktop\\1126\\재단_기_정아인\\JD_G_JAI61.jpg
+
+newmtl None
+Ns 500
+Ka 0.8 0.8 0.8
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl PAL_R_SJY124
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\USER\\Documents\\Desktop\\1126\\팔달_배_손진연\\PAL_R_SJY124.jpg
