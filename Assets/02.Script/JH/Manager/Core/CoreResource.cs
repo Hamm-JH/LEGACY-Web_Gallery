@@ -7,6 +7,7 @@ namespace Management.Core
 	[System.Serializable]
 	public class CoreResource
 	{
-		public string data;
+		public Camera mainCamera;
+		public Canvas rootCanvas;
 	}
 }
