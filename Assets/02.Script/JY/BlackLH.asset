@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cda9b91b61af664386a3c6ff522ee36, type: 3}
+  m_Name: BlackLH
+  m_EditorClassIdentifier: 
+  lightHouseName: BlackLH
+  pos: {x: 0, y: 0, z: 0}
+  mat: {fileID: 2100000, guid: dfb4904a8ee645f49b64c5c48ac29f07, type: 2}
+  texture: {fileID: 2800000, guid: a626e4f4ab306c0448acb4bb37d77f3a, type: 3}
