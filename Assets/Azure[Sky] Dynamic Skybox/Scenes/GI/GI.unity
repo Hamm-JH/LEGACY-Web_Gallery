@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -209,8 +209,6 @@ MonoBehaviour:
   m_referencesHeaderGroup: 0
   m_settingsHeaderGroup: 0
   m_thunderSettingsHeaderGroup: 0
-  m_enableParticlesTriggerModule: 0
-  m_enableParticlesSubEmittersModule: 1
   windZone: {fileID: 346887772}
   lightRainAudioSource: {fileID: 1454832606}
   mediumRainAudioSource: {fileID: 1532185721}
@@ -226,7 +224,6 @@ MonoBehaviour:
   mediumRainParticle: {fileID: 1069377025}
   heavyRainParticle: {fileID: 1942766698}
   snowParticle: {fileID: 1017526014}
-  m_particlesTriggerCollider: {fileID: 0}
   lightRainIntensity: 0
   mediumRainIntensity: 0
   heavyRainIntensity: 0
@@ -419,7 +416,7 @@ MonoBehaviour:
     type: 3}
   m_sunTexture: {fileID: 2800000, guid: d634daa18cfc3a44598c5975319cf921, type: 3}
   m_moonTexture: {fileID: 2800000, guid: ed3f12efe521aa14499bd8c1ba0cf4dd, type: 3}
-  m_starfieldTexture: {fileID: 8900000, guid: 19e5338943cfb2343a838ea2b88341ee, type: 3}
+  m_starfieldTexture: {fileID: 8900000, guid: ab8024ff6a7042f488b773da356d47f9, type: 3}
   m_dynamicCloudsTexture: {fileID: 2800000, guid: 3b7f85ce71a83da47baeebc1c262cb98,
     type: 3}
   staticCloudTexture: {fileID: 2800000, guid: c1ffd812bdd6e2f4b914734150ba9977, type: 3}
@@ -431,7 +428,7 @@ MonoBehaviour:
   km: 1.2
   rayleigh: 1.5
   mie: 1.25
-  mieDistance: 1
+  mieDistance: 0.1
   scattering: 0.25
   luminance: 1
   exposure: 2
@@ -474,7 +471,7 @@ MonoBehaviour:
   staticCloudColor: {r: 1, g: 0.57536083, b: 0.120390385, a: 1}
   m_shaderUpdateMode: 1
   m_scatteringMode: 0
-  m_cloudMode: 0
+  m_cloudMode: 2
 --- !u!114 &193725593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +574,7 @@ MonoBehaviour:
       targetShaderUpdateMode: 0
       targetComponent: {fileID: 193725592}
       targetUniformID: 0
-      multiplier: 25
+      multiplier: 1
       targetComponentName: AzureSkyRenderController
       targetPropertyName: starsIntensity
   - name: Milky Way Intensity
@@ -15113,7 +15110,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
@@ -20806,7 +20803,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 2
   m_Resolution: 64
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 1000, y: 1000, z: 1000}
+  m_BoxSize: {x: 100, y: 100, z: 100}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -39412,7 +39409,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 1000
-    radiusScale: 1
+    radiusScale: 0.01
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
@@ -39437,7 +39434,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
