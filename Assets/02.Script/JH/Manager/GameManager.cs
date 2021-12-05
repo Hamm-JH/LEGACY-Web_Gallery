@@ -44,10 +44,31 @@ namespace Management
 		{
 			Debug.Log("Hello new project");
 
-			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene 01", LoadSceneMode.Additive);
+			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene 01", LoadSceneMode.Single);
+		}
+
+		public override void OnCreate(ContentManager _this)
+		{
+			content = _this;
+
+			Debug.Log($"new content scene loaded :: Scene ID : {content._Data.ID}");
+		}
+
+		public override void OnDispose(ContentManager _this)
+		{
+			// 컨텐츠과 같은 인스턴스일 경우에만 실행한다.
+			if(content == _this)
+			{
+				content = null;
+			}
 		}
 
 		// Fade in, Fade out 구현
+
+		private void Awake()
+		{
+			DontDestroyOnLoad(this);
+		}
 
 		// Start is called before the first frame update
 		void Start()

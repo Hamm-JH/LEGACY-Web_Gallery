@@ -12,5 +12,19 @@ namespace Management
 		/// </summary>
 		public abstract void OnStart();
 
+		//----
+
+		/// <summary>
+		/// 컨텐츠 관리자 생성시 시스템 관리자에 신고
+		/// </summary>
+		/// <param name="_this"> 컨텐츠 관리자 인스턴스 </param>
+		public abstract void OnCreate(ContentManager _this);
+
+		/// <summary>
+		/// 컨텐츠 관리자 소멸시 시스템 관리자에 신고
+		/// </summary>
+		/// <param name="_this"> 컨텐츠 관리자 인스턴스 </param>
+		public abstract void OnDispose(ContentManager _this);
+
 	}
 }

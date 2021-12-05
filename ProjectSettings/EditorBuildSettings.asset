@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scene/_Test/JH/ToPublish/Scene 01.unity
     guid: e3c75f37e0ed46445b65fa45bd3a574f
+  - enabled: 1
+    path: Assets/01.Scene/_Test/JH/ToPublish/Scene 02.unity
+    guid: 2c0ba826cb0bc294f92b0b8b4c6b175d
   m_configObjects: {}
