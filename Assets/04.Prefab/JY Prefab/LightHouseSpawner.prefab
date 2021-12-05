@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6708801207555429456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6708801207555429458}
+  - component: {fileID: 6708801207555429457}
+  m_Layer: 0
+  m_Name: LightHouseSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6708801207555429458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708801207555429456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.57792, y: 2.9839516, z: 13.6959915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6708801207555429457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708801207555429456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c92f6f2be5d8641b50c80a08cbf0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightHouseData:
+  - {fileID: 11400000, guid: 78989c7c68708cd46954ceaa60af37a9, type: 2}
+  - {fileID: 11400000, guid: 331570cdd2bec3d478fb8c86ec79b247, type: 2}
+  - {fileID: 11400000, guid: b19e910e49fdd384fa14a7f984794b79, type: 2}
+  lhPrefab: {fileID: 6737311267780435598, guid: e59c97c7f0670474d8d2b75307b02f35, type: 3}
+  lightHousePos:
+  - {x: 35, y: 0, z: 0}
+  - {x: -35, y: 0, z: 0}
+  - {x: 0, y: 0, z: 50}
+  lightHouseRot:
+  - {x: 0, y: 0.17364818, z: 0, w: 0.9848077}
+  - {x: 0, y: 0.34202012, z: 0, w: 0.9396926}
+  - {x: 0, y: 0.5, z: 0, w: 0.8660254}
