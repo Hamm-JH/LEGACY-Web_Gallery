@@ -26,5 +26,9 @@ namespace Management
 		/// <param name="request"> 변경 요청 인스턴스 </param>
 		public abstract void OnSceneChange(Scene.Request request);
 
+		public virtual void OnChange()
+		{
+			Debug.Log("Hello");
+		}
 	}
 }

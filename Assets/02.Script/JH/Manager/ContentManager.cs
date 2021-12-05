@@ -1,4 +1,5 @@
 using Management.Content;
+using Management.Scene;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,12 +14,14 @@ namespace Management
 	/// </summary>
 	public partial class ContentManager : Manager
 	{
+		#region Values
 		/// <summary>
 		/// 씬 고유의 컨텐츠 정보를 담고있는 변수
 		/// </summary>
 		[SerializeField] Content.Data contentData;
 
 		public Data _Data { get => contentData; set => contentData=value; }
+		#endregion
 
 		// Start is called before the first frame update
 		void Start()
