@@ -21,10 +21,10 @@ namespace Management
 		public abstract void OnCreate(ContentManager _this);
 
 		/// <summary>
-		/// 컨텐츠 관리자 소멸시 시스템 관리자에 신고
+		/// 씬 변경 :: 컨텐츠 관리자 소멸시 시스템 관리자에 신고
 		/// </summary>
-		/// <param name="_this"> 컨텐츠 관리자 인스턴스 </param>
-		public abstract void OnDispose(ContentManager _this);
+		/// <param name="request"> 변경 요청 인스턴스 </param>
+		public abstract void OnSceneChange(Scene.Request request);
 
 	}
 }

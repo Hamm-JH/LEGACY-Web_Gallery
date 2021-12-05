@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 namespace Management
 {
 	using Core;
+	using Management.Scene;
 
 	/// <summary>
 	/// 관리자 클래스의 부모 클래스
@@ -40,26 +41,100 @@ namespace Management
 		/// </summary>
 		public ContentManager content;
 
+		/// <summary>
+		/// 직전의 Scene 이동시의 요청사항 저장
+		/// </summary>
+		public Request prevRequest;
+
+		/// <summary>
+		/// 시스템 관리자 코드 OnStart
+		/// :: 컨텐츠 초기화시 한 번만 진입한다.
+		/// </summary>
 		public override void OnStart()
 		{
 			Debug.Log("Hello new project");
 
-			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene 01", LoadSceneMode.Single);
+			UnityEngine.SceneManagement.SceneManager.LoadScene(
+				Def.SceneName.Scene01.ToString(), 
+				LoadSceneMode.Single);
 		}
 
+		/// <summary>
+		/// 시스템 관리자 코드 OnCreate
+		/// :: 컨텐츠 관리자에서 자기 자신을 이 메서드를 통해 시스템 관리자에게 공지한다.
+		/// </summary>
+		/// <param name="_this"></param>
 		public override void OnCreate(ContentManager _this)
 		{
+			// 컨텐츠 관리자 코드 새로 할당
 			content = _this;
 
-			Debug.Log($"new content scene loaded :: Scene ID : {content._Data.ID}");
+			//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			// TODO :: [씬 변경 3단계] 1205 이 아래의 코드는 씬 변경이 완료되었을 때 시행
+			Debug.Log($"Step 3 : Scene Change success");
+
+			content.Init();
+
+			//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			// TODO :: [씬 변경 4단계] 1205 임시 코드 배치 (Fade In)
+			Color color = core.curtain.color;
+			// Scene 변경 완료시, curtain Fade Out :: 현재는 색상 변경으로 지정해둠
+			core.curtain.color = new Color(color.r, color.g, color.b, 0);
+			// Scene 변경 완료시 rootCanvas Off
+			core.rootCanvas.enabled = false;
+
+#if UNITY_EDITOR
+			Debug.Log($"Debug : new content scene loaded :: Scene ID : {content._Data.ID}");
+#endif
 		}
 
-		public override void OnDispose(ContentManager _this)
+		/// <summary>
+		/// 시스템 관리자 코드 OnSceheChange
+		/// :: 컨텐츠 관리자에서 Scene 이동 발생시, 씬 이동에 대한 요청 변수를 받는다.
+		/// </summary>
+		/// <param name="request"> Scene 이동 옵션 인스턴스 </param>
+		public override void OnSceneChange(Request request)
 		{
-			// 컨텐츠과 같은 인스턴스일 경우에만 실행한다.
-			if(content == _this)
+			// 컨텐츠 변수 리셋
+			content = null;
+
+			// 임시 요청변수 저장
+			Request currRequest = request;
+
+			// 이전 요청변수 prevRequest에 대한 처리가 필요할 경우, 이 영역 안에서 prevRequest값이 변하기 전에 실행
 			{
-				content = null;
+				// 씬 이름 확인
+				Def.SceneName sName = request.sceneName;
+
+				//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				Debug.Log($"Step 1 : Scene Change {sName.ToString()} stanby");
+
+				// TODO :: [씬 변경 1단계] 1205 임시 코드 배치 (Fade In)
+				Color color = core.curtain.color;
+				// Fade In 준비
+				core.curtain.color = new Color(color.r, color.g, color.b, 0);
+				// Fade In 타이밍에 루트 캔버스 On
+				core.rootCanvas.enabled = true;
+
+				// Scene 요청 발생 확인시, curtain Fade In :: 현재는 색상 변경으로 지정해둠
+				core.curtain.color = new Color(color.r, color.g, color.b, 1);
+
+				// 카메라 원상복귀
+				core.mainCamera.transform.SetParent(transform);
+				core.mainCamera.transform.position = new Vector3();
+				core.mainCamera.transform.rotation = Quaternion.identity;
+
+				//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				// TODO :: [씬 변경 2단계] 1205 이 아래의 코드는 씬 변경 준비가 완료되었을 때 시행
+				Debug.Log($"Step 2 : Scene Change {sName.ToString()} ready");
+
+				// 요청변수 갱신
+				prevRequest = currRequest;
+				SceneManager.LoadSceneAsync(sName.ToString(), LoadSceneMode.Single);
 			}
 		}
 
@@ -75,5 +150,7 @@ namespace Management
 		{
 			OnStart();
 		}
+
+		
 	}
 }
