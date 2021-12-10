@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0264b8669c2d1294580ce9acfffcf3ab, type: 3}
-  m_Name: SampleTest
+  m_Name: Scene02
   m_EditorClassIdentifier: 
   overrideObject: {fileID: 11400000, guid: 4c8b86f21f5f39a499af79bde79957d5, type: 2}
   profilePropertyList:
@@ -629,11 +629,11 @@ MonoBehaviour:
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.2509804, g: 0.65882355, b: 1, a: 1}
+      key0: {r: 0.25, g: 0.6586208, b: 1, a: 1}
       key1: {r: 0.6102941, g: 0.8226167, b: 1, a: 1}
-      key2: {r: 0.62270975, g: 0, b: 1, a: 0}
-      key3: {r: 1, g: 0.5203068, b: 0, a: 0}
-      key4: {r: 1, g: 0, b: 0.93099165, a: 0}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 0.6102941, g: 0.8226167, b: 1, a: 0}
       key6: {r: 0.25, g: 0.6586208, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -795,32 +795,32 @@ MonoBehaviour:
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.06877661, g: 0, b: 1, a: 1}
-      key1: {r: 1, g: 0.28563672, b: 0, a: 1}
-      key2: {r: 1, g: 0.31654575, b: 0, a: 1}
-      key3: {r: 1, g: 0.9577489, b: 0, a: 0}
+      key0: {r: 0.25, g: 0.6586208, b: 1, a: 1}
+      key1: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 1}
+      key2: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
       key4: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 0}
-      key5: {r: 1, g: 0.14269169, b: 0.0990566, a: 0}
-      key6: {r: 0, g: 0.20210934, b: 1, a: 0}
-      key7: {r: 0.22068357, g: 0, b: 1, a: 0}
-      ctime0: 10987
-      ctime1: 16384
-      ctime2: 17348
-      ctime3: 34117
-      ctime4: 42405
-      ctime5: 46838
-      ctime6: 51657
-      ctime7: 54934
+      key5: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 0}
+      key6: {r: 0.25, g: 0.6586208, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 14745
+      ctime1: 16711
+      ctime2: 19661
+      ctime3: 32768
+      ctime4: 45875
+      ctime5: 48824
+      ctime6: 50790
+      ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 48573
-      atime3: 65535
+      atime2: 0
+      atime3: 0
       atime4: 0
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     sunElevationBasedGradient:
       serializedVersion: 2
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.25
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1787,7 +1787,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 1
+    slider: 0.5
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1953,7 +1953,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.5
+    slider: 1
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -2783,7 +2783,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.75
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:

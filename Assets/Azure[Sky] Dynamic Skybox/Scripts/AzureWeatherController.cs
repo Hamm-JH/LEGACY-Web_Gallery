@@ -48,7 +48,7 @@ namespace UnityEngine.AzureSky
         private bool  m_isWeatherChanging = false;
 
         // Profiles evaluation
-        [SerializeField] private float m_timeOfDay = 6.0f;
+        public float m_timeOfDay = 6.0f;
         [SerializeField] private float m_sunElevation = 0.5f;
         [SerializeField] private float m_moonElevation = 0.5f;
         private string m_componentName = null;
