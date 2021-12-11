@@ -63,14 +63,16 @@ public class TextureManager : MonoBehaviour
         for (int i = 0; i < WorldChild(); i++)
         {
             int num = i + 481;
-            texturePath.Add("texture/" + num + ".jpg");
+            texturePath.Add("texture/" + num);
             Debug.Log("pass");
             // worldTextures.Add(Resources.Load(texturePath[i], typeof(Texture)) as Texture);
-            Texture2D texture = new Texture2D(0, 0);
-           texture = Resources.Load<Texture2D>(texturePath[i]);
            
-          //  Debug.Log("texture is now" + texture);
-            worldTextures.Add(t);
+            //  texture = Resources.Load<Texture2D>(texturePath[i]);
+            var texture = Resources.Load(texturePath[i]) as Texture2D;
+
+
+            Debug.Log(texture.GetType());
+            worldTextures.Add(texture);
             worldArray[i].GetComponent<MeshRenderer>().material.mainTexture = worldTextures[i];
           //  Debug.Log("pass");
         }

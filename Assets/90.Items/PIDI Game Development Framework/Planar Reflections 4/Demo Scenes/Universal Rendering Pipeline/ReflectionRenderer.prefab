@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultReflectorMesh: {fileID: 4300002, guid: 7895f1f943551db4e9784958a7e88a58, type: 3}
   defaultReflectorMaterial: {fileID: 2100000, guid: fbfc4efe23a9b0046a787d829353352b, type: 2}
-  showPreviewReflector: 0
+  showPreviewReflector: 1
   _settings:
     nearClipPlane: 0.05
     farClipPlane: 100
@@ -72,7 +72,7 @@ MonoBehaviour:
     renderDepth: 0
     renderFog: 0
     fogRendererIndex: 1
-    forceHDR: 0
+    forceHDR: 1
     updateOnCastOnly: 1
     framerateByDistance: 1
     framerateThreshold: 20
