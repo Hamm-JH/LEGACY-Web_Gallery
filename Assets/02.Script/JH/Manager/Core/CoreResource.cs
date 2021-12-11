@@ -11,6 +11,8 @@ namespace Management.Core
 	[System.Serializable]
 	public class CoreResource
 	{
+		public Person.Character character;
+
 		/// <summary>
 		/// 주로 사용하는 카메라 변수
 		/// </summary>

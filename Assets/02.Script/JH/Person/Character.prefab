@@ -161,5 +161,8 @@ MonoBehaviour:
   setting:
     horizontalSpeed: 2
     verticalSpeed: 2
+    characterPosition: {fileID: 331774932063282177}
     camPosition: {fileID: 331774930698421967}
     mainCamera: {fileID: 0}
+  _H: 0
+  _V: 0

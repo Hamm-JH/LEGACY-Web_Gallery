@@ -11,7 +11,7 @@ namespace Management
 	/// <summary>
 	/// 관리자 클래스의 부모 클래스
 	/// </summary>
-	public class GameManager : Manager
+	public partial class GameManager : Manager
 	{
 		#region Instance
 
@@ -69,21 +69,11 @@ namespace Management
 			// 컨텐츠 관리자 코드 새로 할당
 			content = _this;
 
-			//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-			// TODO :: [씬 변경 3단계] 1205 이 아래의 코드는 씬 변경이 완료되었을 때 시행
-			Debug.Log($"Step 3 : Scene Change success");
-
-			content.Init();
-
-			//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-			// TODO :: [씬 변경 4단계] 1205 임시 코드 배치 (Fade In)
-			Color color = core.curtain.color;
-			// Scene 변경 완료시, curtain Fade Out :: 현재는 색상 변경으로 지정해둠
-			core.curtain.color = new Color(color.r, color.g, color.b, 0);
-			// Scene 변경 완료시 rootCanvas Off
-			core.rootCanvas.enabled = false;
+			// 컨텐츠 초기화
+			ContentInit(core, content);
+			
+			// fade out
+			OnFadeOut();
 
 #if UNITY_EDITOR
 			Debug.Log($"Debug : new content scene loaded :: Scene ID : {content._Data.ID}");
@@ -108,33 +98,16 @@ namespace Management
 				// 씬 이름 확인
 				Def.SceneName sName = request.sceneName;
 
-				//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
 				Debug.Log($"Step 1 : Scene Change {sName.ToString()} stanby");
 
-				// TODO :: [씬 변경 1단계] 1205 임시 코드 배치 (Fade In)
-				Color color = core.curtain.color;
-				// Fade In 준비
-				core.curtain.color = new Color(color.r, color.g, color.b, 0);
-				// Fade In 타이밍에 루트 캔버스 On
-				core.rootCanvas.enabled = true;
-
-				// Scene 요청 발생 확인시, curtain Fade In :: 현재는 색상 변경으로 지정해둠
-				core.curtain.color = new Color(color.r, color.g, color.b, 1);
-
-				// 카메라 원상복귀
-				core.mainCamera.transform.SetParent(transform);
-				core.mainCamera.transform.position = new Vector3();
-				core.mainCamera.transform.rotation = Quaternion.identity;
-
-				//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+				OnFadeIn();
 
 				// TODO :: [씬 변경 2단계] 1205 이 아래의 코드는 씬 변경 준비가 완료되었을 때 시행
 				Debug.Log($"Step 2 : Scene Change {sName.ToString()} ready");
 
 				// 요청변수 갱신
 				prevRequest = currRequest;
-				SceneManager.LoadSceneAsync(sName.ToString(), LoadSceneMode.Single);
+				SceneManager.LoadScene(sName.ToString(), LoadSceneMode.Single);
 			}
 		}
 

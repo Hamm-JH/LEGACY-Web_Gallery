@@ -17,8 +17,14 @@ namespace Management.Content
 		[SerializeField] Person.Character character;
 		[SerializeField] List<Canvas> canvasList;
 
+		[SerializeField] Transform characterTransform;
+		[SerializeField] Transform basePlaneTransform;
+
 		public SceneName ID { get => id; set => id=value; }
 		public Character Character { get => character; set => character=value; }
 		public List<Canvas> CanvasList { get => canvasList; set => canvasList=value; }
+		
+		public Transform CharacterTransform { get => characterTransform; set => characterTransform=value; }
+		public Transform BasePlaneTransform { get => basePlaneTransform; set => basePlaneTransform=value; }
 	}
 }

@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/01.Scene/_Test/JH/ToPublish/Manager.unity
     guid: a26b72323e6f84f4d85b64935da3603f
   - enabled: 1
-    path: Assets/01.Scene/_Test/JH/ToPublish/Scene01.unity
-    guid: e3c75f37e0ed46445b65fa45bd3a574f
+    path: Assets/01.Scene/_Test/JH/ToPublish/JY/Scene01.unity
+    guid: 3de4e2b31073ad44ebb731dc0c9d243e
   - enabled: 1
-    path: Assets/01.Scene/_Test/JH/ToPublish/Scene02.unity
-    guid: 2c0ba826cb0bc294f92b0b8b4c6b175d
+    path: Assets/01.Scene/_Test/JH/ToPublish/JY/Scene02.unity
+    guid: bf769f2ed2e13c64ab8709840e15ed6e
+  - enabled: 1
+    path: Assets/01.Scene/_Test/JH/ToPublish/JY/Scene03.unity
+    guid: 27828ba68f1e8464daa6eb01c36f16a1
   m_configObjects: {}

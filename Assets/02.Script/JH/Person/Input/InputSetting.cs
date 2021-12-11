@@ -10,12 +10,14 @@ namespace Person.pInput
 		[SerializeField] float horizontalSpeed = 2.0f;
 		[SerializeField] float verticalSpeed = 2.0f;
 
+		[SerializeField] Transform characterPosition;
 		[SerializeField] Transform camPosition;
 		[SerializeField] Camera mainCamera;
 
 		public float HorizontalSpeed { get => horizontalSpeed; set => horizontalSpeed=value; }
 		public float VerticalSpeed { get => verticalSpeed; set => verticalSpeed=value; }
 
+		public Transform CharacterPosition { get => characterPosition; set => characterPosition=value; }
 		public Transform CamPosition { get => camPosition; set => camPosition=value; }
 		public Camera MainCamera { get => mainCamera; set => mainCamera=value; }
 	}
