@@ -16,3 +16,4 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   mat: {fileID: 2100000, guid: dfb4904a8ee645f49b64c5c48ac29f07, type: 2}
   texture: {fileID: 2800000, guid: a626e4f4ab306c0448acb4bb37d77f3a, type: 3}
+  audioClip: {fileID: 8300000, guid: 5533a00c630f85649bf5d89b3fc58e8e, type: 3}

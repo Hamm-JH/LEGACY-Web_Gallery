@@ -5,20 +5,10 @@ using UnityEngine.EventSystems;
 
 namespace EventDef
 {
-	public partial class UIEvents : MonoBehaviour, IPointerClickHandler
+	public partial class UIEvents : MonoBehaviour
 	{
+		[Header("Scene 변경시 필요 변수")]
 		public Def.SceneName targetScene;
-
-		public void OnPointerClick(PointerEventData eventData)
-		{
-			switch(eventCode)
-			{
-				case EventCode.Scene01_SceneChange:
-				case EventCode.Scene02_SceneChange:
-					OnRequest_SceneChange();
-					break;
-			}
-		}
 
 		public void OnRequest_SceneChange()
 		{

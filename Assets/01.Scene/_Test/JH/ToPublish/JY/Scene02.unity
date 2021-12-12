@@ -175,7 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a464b086e9fdbb4295b1d1b6b781e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightHouse: {fileID: 0}
   eventCode: 1
+  linkURL: 
   targetScene: 2
 --- !u!114 &19352753
 MonoBehaviour:
@@ -610,7 +612,11 @@ PrefabInstance:
       objectReference: {fileID: 2066758709}
     - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688414152278895802, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}

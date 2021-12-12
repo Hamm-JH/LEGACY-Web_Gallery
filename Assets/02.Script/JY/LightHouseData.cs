@@ -25,4 +25,7 @@ public class LightHouseData : ScriptableObject
 
     public Texture Texture { get { return texture; } }
 
+    [SerializeField]
+    private AudioClip audioClip;
+	public AudioClip AudioClip { get => audioClip; set => audioClip=value; }
 }

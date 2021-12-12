@@ -5,10 +5,10 @@ using UnityEngine;
 public enum LightHouseType { BlackLH, RedLH, WhiteLH}
 public class LightHouseSpawner : MonoBehaviour
 {
-    //��� ������ ����Ʈ�� ����.
+    //���?������ ����Ʈ�� ����.
     [SerializeField]
     private List<LightHouseData> lightHouseData;
-    //��� �������� ���� ���ӿ�����Ʈ.
+    //���?�������� ���� ���ӿ�����Ʈ.
     [SerializeField]
     private GameObject lhPrefab;
 
@@ -26,7 +26,7 @@ public class LightHouseSpawner : MonoBehaviour
             //lh.PrintLHData();
             lh.transform.position = lightHousePos[i];
             lh.transform.rotation = lightHouseRot[i];
-
+            
         }
     }
 
@@ -36,13 +36,14 @@ public class LightHouseSpawner : MonoBehaviour
         LightHouse lh = newLH.GetComponent<LightHouse>();
        
         lh.lhData = lightHouseData[(int)type];
+        lh.InitializePrefab();
         newLH.name = lh.lhData.LightHouseName;
 
         GameObject child = newLH.transform.GetChild(0).transform.GetChild(0).gameObject;
         var childMat = child.GetComponent<MeshRenderer>();
         if(childMat != null)
         {
-            childMat.material = null; //어째서인지 모르지만 한번 null처리를 해줘야 깔끔하게 들어감.
+            childMat.material = null; //?�째?�인지 모르지�??�번 null처리�??�줘??깔끔?�게 ?�어�?
             childMat.material = lh.lhData.Mat;
             Debug.Log("childMat material is now " + childMat.material);
             childMat.material.mainTexture = lh.lhData.Texture;

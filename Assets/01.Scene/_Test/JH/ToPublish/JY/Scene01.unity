@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.48351365, g: 0.67744863, b: 0.8426473, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7110,7 +7110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a464b086e9fdbb4295b1d1b6b781e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightHouse: {fileID: 0}
   eventCode: 0
+  linkURL: 
   targetScene: 1
 --- !u!1 &1750453641
 GameObject:
@@ -48279,5 +48281,13 @@ PrefabInstance:
       propertyPath: contentData.canvasList.Array.data[0]
       value: 
       objectReference: {fileID: 293608439}
+    - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688414152278895802, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
