@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: LighHouse Canvas
+    uniqueID: 1710580513
+    locked: 0
