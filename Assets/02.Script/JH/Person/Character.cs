@@ -8,6 +8,13 @@ namespace Person
 	{
 		[SerializeField] pInput.InputSetting setting;
 
+		public struct InputParameter
+		{
+			public bool isClicked;
+		}
+
+		public InputParameter inputs;
+
 		/// <summary>
 		/// 캐릭터 초기화
 		/// </summary>
@@ -29,19 +36,36 @@ namespace Person
 		// Update is called once per frame
 		void Update()
 		{
-			if(setting.MainCamera != null)
+			float moveH = Time.deltaTime * Input.GetAxis("Horizontal");
+			float moveV = Time.deltaTime * Input.GetAxis("Vertical");
+
+			setting.CharacterPosition.Translate(moveH, 0, moveV);
+
+
+			if(Input.GetMouseButtonDown(0))
 			{
-				float h = setting.HorizontalSpeed * Input.GetAxis("Mouse X");
-				float v = setting.VerticalSpeed * Input.GetAxis("Mouse Y");
-
-				setting.CharacterPosition.Rotate(0, h, 0);
-				setting.MainCamera.transform.Rotate(-v, 0, 0);
-
-				float moveH = Time.deltaTime * Input.GetAxis("Horizontal");
-				float moveV = Time.deltaTime * Input.GetAxis("Vertical");
-
-				setting.CharacterPosition.Translate(moveH, 0, moveV);
+				inputs.isClicked = true;
 			}
+			else if(Input.GetMouseButton(0))
+			{
+				if(inputs.isClicked)
+				{
+					if(setting.MainCamera != null)
+					{
+						float h = setting.HorizontalSpeed * Input.GetAxis("Mouse X");
+						float v = setting.VerticalSpeed * Input.GetAxis("Mouse Y");
+
+						setting.CharacterPosition.Rotate(0, h, 0);
+						setting.MainCamera.transform.Rotate(-v, 0, 0);
+
+					}
+				}
+			}
+			else if(Input.GetMouseButtonUp(0))
+			{
+				inputs.isClicked = false;
+			}
+
 		}
 	}
 }
