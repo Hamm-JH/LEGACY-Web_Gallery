@@ -78,6 +78,7 @@ namespace Management
 			// 컨텐츠 관리자 코드 새로 할당
 			content = _this;
 
+			
 			// 컨텐츠 초기화
 			ContentInit(core, content, envSettings[(int)core.currentScene]);
 			
