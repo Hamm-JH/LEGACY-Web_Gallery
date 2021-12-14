@@ -32,5 +32,10 @@ namespace Management.Core
 		/// Fade In, Fade Out을 구현할 타이틀 이미지 패널
 		/// </summary>
 		public Image curtain;
+
+		/// <summary>
+		/// 현재 씬을 나타내는 열거변수
+		/// </summary>
+		public Def.SceneName currentScene;
 	}
 }

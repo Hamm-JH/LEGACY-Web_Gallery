@@ -38,9 +38,7 @@ namespace Management
 		public CoreResource core;
 
 		[Header("환경변수")]
-		public EnvSetting envSetting;
-
-		[SerializeField] EnvDictionary envs;
+		public List<EnvSetting> envSettings;
 
 		#region Content Refresh
 		/// <summary>
@@ -63,8 +61,10 @@ namespace Management
 		{
 			Debug.Log("Hello new project");
 
+			core.currentScene = Def.SceneName.Scene01;
+
 			UnityEngine.SceneManagement.SceneManager.LoadScene(
-				Def.SceneName.Scene01.ToString(), 
+				core.currentScene.ToString(), 
 				LoadSceneMode.Single);
 		}
 
@@ -79,7 +79,7 @@ namespace Management
 			content = _this;
 
 			// 컨텐츠 초기화
-			ContentInit(core, content, envSetting);
+			ContentInit(core, content, envSettings[(int)core.currentScene]);
 			
 			// fade out
 			OnFadeOut();
@@ -116,6 +116,7 @@ namespace Management
 
 				// 요청변수 갱신
 				prevRequest = currRequest;
+				core.currentScene = prevRequest.sceneName;	// 업데이트된 씬 상태를 저장한다.
 				SceneManager.LoadScene(sName.ToString(), LoadSceneMode.Single);
 			}
 		}

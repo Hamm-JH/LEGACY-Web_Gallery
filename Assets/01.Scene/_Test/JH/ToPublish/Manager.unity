@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856b7db7dd6d37f4e816e1977480f5ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 10
 --- !u!1 &1500669059
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +538,11 @@ MonoBehaviour:
     rootCanvas: {fileID: 1500669062}
     mainAudio: {fileID: 3229971316902660669}
     curtain: {fileID: 528875210}
-  envSetting: {fileID: 0}
+    currentScene: 0
+  envSettings:
+  - {fileID: 2047673285}
+  - {fileID: 258239050}
+  - {fileID: 570296351}
   content: {fileID: 0}
 --- !u!1 &2047673283
 GameObject:

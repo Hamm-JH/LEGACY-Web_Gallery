@@ -40834,6 +40834,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7676260143140439497, guid: c80196c918e73c24cbff049faab0295c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7724680108812820267, guid: c80196c918e73c24cbff049faab0295c, type: 3}
       propertyPath: m_Name
       value: MoveArea_01

@@ -15,7 +15,7 @@ namespace Management
 			Camera cam = core.mainCamera;
 
             // 캐릭터 초기화
-            //core.character.OnInit(cam, _content._Data.CharacterTransform);
+            core.character.OnInit(cam, _content._Data.CharacterTransform, env.MoveSpeed);
 
 
 			// 캔버스 초기화
