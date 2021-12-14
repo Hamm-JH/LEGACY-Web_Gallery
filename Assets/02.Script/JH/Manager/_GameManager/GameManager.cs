@@ -34,17 +34,26 @@ namespace Management
 		/// <summary>
 		/// 범용 리소스 모음
 		/// </summary>
+		[Header("범용 사용변수")]
 		public CoreResource core;
 
+		[Header("환경변수")]
+		public EnvSetting envSetting;
+
+		[SerializeField] EnvDictionary envs;
+
+		#region Content Refresh
 		/// <summary>
 		/// 컨텐츠 관리자 클래스 :: 컨텐츠 씬 레벨 생성시 실행되는 코드
 		/// </summary>
+		[Header("컨텐츠 관리 인스턴스")]
 		public ContentManager content;
 
 		/// <summary>
 		/// 직전의 Scene 이동시의 요청사항 저장
 		/// </summary>
 		public Request prevRequest;
+		#endregion
 
 		/// <summary>
 		/// 시스템 관리자 코드 OnStart
@@ -70,7 +79,7 @@ namespace Management
 			content = _this;
 
 			// 컨텐츠 초기화
-			ContentInit(core, content);
+			ContentInit(core, content, envSetting);
 			
 			// fade out
 			OnFadeOut();

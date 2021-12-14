@@ -8,9 +8,11 @@ namespace Person
 	{
 		[SerializeField] pInput.InputSetting setting;
 
+		[System.Serializable]
 		public struct InputParameter
 		{
 			public bool isClicked;
+			public float movementSpeed;
 		}
 
 		public InputParameter inputs;
@@ -20,8 +22,11 @@ namespace Person
 		/// </summary>
 		/// <param name="cam"> 메인카메라 </param>
 		/// <param name="InitPosition"> 객체 시작위치 </param>
-		public void OnInit(Camera cam, Transform InitTransform)
+		public void OnInit(Camera cam, Transform InitTransform, float moveSpeed)
 		{
+			// 캐릭터 이동속도 업데이트
+			inputs.movementSpeed = moveSpeed;
+
 			setting.MainCamera = cam;
 			setting.MainCamera.transform.SetParent(setting.CamPosition);
 
@@ -36,8 +41,8 @@ namespace Person
 		// Update is called once per frame
 		void Update()
 		{
-			float moveH = Time.deltaTime * Input.GetAxis("Horizontal");
-			float moveV = Time.deltaTime * Input.GetAxis("Vertical");
+			float moveH = Time.deltaTime * Input.GetAxis("Horizontal") * inputs.movementSpeed;
+			float moveV = Time.deltaTime * Input.GetAxis("Vertical") * inputs.movementSpeed;
 
 			setting.CharacterPosition.Translate(moveH, 0, moveV);
 
