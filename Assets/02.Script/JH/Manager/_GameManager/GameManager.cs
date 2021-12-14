@@ -37,7 +37,7 @@ namespace Management
 		[Header("범용 사용변수")]
 		public CoreResource core;
 
-		[Header("환경변수")]
+		[Header("씬별 환경변수 리스트")]
 		public List<EnvSetting> envSettings;
 
 		#region Content Refresh
