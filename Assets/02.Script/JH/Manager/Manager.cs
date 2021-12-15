@@ -12,8 +12,6 @@ namespace Management
 		/// </summary>
 		public abstract void OnStart();
 
-		//----
-
 		/// <summary>
 		/// 컨텐츠 관리자 생성시 시스템 관리자에 신고
 		/// </summary>
@@ -25,10 +23,5 @@ namespace Management
 		/// </summary>
 		/// <param name="request"> 변경 요청 인스턴스 </param>
 		public abstract void OnSceneChange(Scene.Request request);
-
-		public virtual void OnChange()
-		{
-			Debug.Log("Hello");
-		}
 	}
 }

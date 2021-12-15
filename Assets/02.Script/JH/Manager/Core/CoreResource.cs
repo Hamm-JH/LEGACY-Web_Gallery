@@ -14,6 +14,11 @@ namespace Management.Core
 		public Person.Character character;
 
 		/// <summary>
+		/// 관리자 Fade 컨트롤 animator
+		/// </summary>
+		public Animator animator;
+
+		/// <summary>
 		/// 주로 사용하는 카메라 변수
 		/// </summary>
 		public Camera mainCamera;
