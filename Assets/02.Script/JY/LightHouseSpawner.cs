@@ -9,6 +9,8 @@ public class LightHouseSpawner : MonoBehaviour
     [SerializeField]
     private List<LightHouseData> lightHouseData;
     //���?�������� ���� ���ӿ�����Ʈ.
+
+    public ServerLoaderTest serverloader;
     [SerializeField]
     private GameObject lhPrefab;
 
@@ -33,6 +35,7 @@ public class LightHouseSpawner : MonoBehaviour
    public GameObject SpawnLightHouse(LightHouseType type)
     {
         GameObject newLH = Instantiate(lhPrefab);
+       //GameObject newLH = GameObject.FindGameObjectWithTag("LightHouse");
         LightHouse lh = newLH.GetComponent<LightHouse>();
        
         lh.lhData = lightHouseData[(int)type];
