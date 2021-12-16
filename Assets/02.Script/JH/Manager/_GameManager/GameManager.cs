@@ -88,7 +88,7 @@ namespace Management
 			
 			// fade out
 			// TODO 1215 :: 어드레서블 시행시 이 구간에서 삭제
-			OnFadeOut();
+			//OnFadeOut();
 
 #if UNITY_EDITOR
 			Debug.Log($"Debug : new content scene loaded :: Scene ID : {content._Data.ID}");

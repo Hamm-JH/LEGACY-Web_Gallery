@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.48351365, g: 0.67744863, b: 0.8426473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -417,6 +417,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8731603127051371138, guid: fa71591864294ad4aaf7200de085ec3d, type: 3}
   m_PrefabInstance: {fileID: 1116607758}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1245287569
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 587
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 587
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 191
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
+      propertyPath: m_Name
+      value: MoveArea_03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0c2c4c08ada7ea4482ce0e7cc28fea2, type: 3}
 --- !u!1001 &1364665071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -568,6 +633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2625fece1e60494d9a2327303d65837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SizeText: {fileID: 0}
+  LableForBundleDown: 
+  lightHouse: {fileID: 0}
 --- !u!4 &1531645763
 Transform:
   m_ObjectHideFlags: 0
@@ -580,7 +648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1997296040
 GameObject:
@@ -1588,6 +1656,10 @@ PrefabInstance:
     - target: {fileID: 5565796374342588512, guid: 7c549ce99e3bccd4a89523f8b99f4f9e, type: 3}
       propertyPath: m_Name
       value: MoveArea_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5565796374342588512, guid: 7c549ce99e3bccd4a89523f8b99f4f9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7141740826795217772, guid: 7c549ce99e3bccd4a89523f8b99f4f9e, type: 3}
       propertyPath: m_IsTrigger
