@@ -20,22 +20,26 @@ public class LightHouseSpawner : MonoBehaviour
     [SerializeField]
     private Quaternion[] lightHouseRot;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
+    {
+        //SetCountLightHouse();
+    }
+
+    public void SetCountLightHouse()
     {
         for (int i = 0; i < lightHouseData.Count; i++)
         {
-             GameObject lh = SpawnLightHouse((LightHouseType)i);
+            GameObject lh = SpawnLightHouse((LightHouseType)i);
             //lh.PrintLHData();
             lh.transform.position = lightHousePos[i];
             lh.transform.rotation = lightHouseRot[i];
-            
+
         }
     }
-
    public GameObject SpawnLightHouse(LightHouseType type)
     {
-        GameObject newLH = Instantiate(lhPrefab);
-       //GameObject newLH = GameObject.FindGameObjectWithTag("LightHouse");
+        //GameObject newLH = Instantiate(lhPrefab);
+       GameObject newLH = GameObject.FindGameObjectWithTag("LightHouse");
         LightHouse lh = newLH.GetComponent<LightHouse>();
        
         lh.lhData = lightHouseData[(int)type];
