@@ -37,7 +37,7 @@ MonoBehaviour:
   m_RemoteCatalogLoadPath:
     m_Id: e9cd726a423211140ab09f34aa02b039
   m_ContentStateBuildPath: 
-  m_overridePlayerVersion: 
+  m_overridePlayerVersion: 1
   m_GroupAssets:
   - {fileID: 11400000, guid: f7a0d4e37f878334ca280903412ac79d, type: 2}
   - {fileID: 11400000, guid: d2b440962acf38740975d9bed7b37734, type: 2}
@@ -76,7 +76,7 @@ MonoBehaviour:
       - m_Id: 650b3706574ca0341814a3f35281916b
         m_Value: ServerData/[BuildTarget]
       - m_Id: e9cd726a423211140ab09f34aa02b039
-        m_Value: https://plinqer.cc/www/addressable/StandaloneWindows64
+        m_Value: https://s3.ap-northeast-2.amazonaws.com/com.duruphil2/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 4661faa79def6c34aab9b747a2f7d1a3
       m_Name: BuildTarget

@@ -17,13 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 44c4acdde0484ee49bc4041b8b3275c9
   m_SerializeEntries:
-  - m_GUID: 2989040ca5640224aad50742f32bd8f5
-    m_Address: Assets/06.Images/JY/sources1212/sources.spriteatlas
+  - m_GUID: e59c97c7f0670474d8d2b75307b02f35
+    m_Address: LightHouse
     m_ReadOnly: 0
     m_SerializedLabels:
-    - UI
-  - m_GUID: 72d63585be79c9e4ea20c3c3685882c4
-    m_Address: LightHouse
+    - Scene03
+  - m_GUID: 32619763453af314bbc0861497f3d9bb
+    m_Address: World
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scene03
