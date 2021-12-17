@@ -78,6 +78,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: e9cd726a423211140ab09f34aa02b039
         m_Value: https://s3.ap-northeast-2.amazonaws.com/com.duruphil2/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 7023bd07a1b824a4c83a785d24516ab6
+      m_ProfileName: JH Profile
+      m_Values:
+      - m_Id: 4661faa79def6c34aab9b747a2f7d1a3
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 5217778cf674fa940ab828b5442fb20e
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: ecf0299a169f33a419e2d97af9b4c6c2
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 650b3706574ca0341814a3f35281916b
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: e9cd726a423211140ab09f34aa02b039
+        m_Value: https://jhbucket1325.s3.ap-northeast-2.amazonaws.com/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 4661faa79def6c34aab9b747a2f7d1a3
       m_Name: BuildTarget
@@ -118,7 +132,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5974499bb1dad3945868906fa7f47e22, type: 2}
   - {fileID: 11400000, guid: a378b14f8c57cfa4eb61d7c29483b41c, type: 2}
   - {fileID: 11400000, guid: e768e4541b94f444f97ec50d10092fd2, type: 2}
-  m_ActiveProfileId: 84c85e512d42a614ba04a12ed4a3303f
+  m_ActiveProfileId: 7023bd07a1b824a4c83a785d24516ab6
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
