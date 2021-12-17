@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 12577c07ab2de8f4bb0c334650a46683
   m_SerializeEntries:
   - m_GUID: b7b3c1f146a24ea449e64dc38072e155
-    m_Address: Assets/04.Prefab/JY Prefab/Addressable Loader.prefab
+    m_Address: AddressableLoader
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

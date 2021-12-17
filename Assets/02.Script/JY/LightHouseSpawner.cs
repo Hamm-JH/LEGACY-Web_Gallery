@@ -22,7 +22,7 @@ public class LightHouseSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //SetCountLightHouse();
+        SetCountLightHouse();
     }
 
     public void SetCountLightHouse()
@@ -38,8 +38,8 @@ public class LightHouseSpawner : MonoBehaviour
     }
    public GameObject SpawnLightHouse(LightHouseType type)
     {
-        //GameObject newLH = Instantiate(lhPrefab);
-       GameObject newLH = GameObject.FindGameObjectWithTag("LightHouse");
+        GameObject newLH = Instantiate(lhPrefab);
+       //GameObject newLH = GameObject.FindGameObjectWithTag("LightHouse");
         LightHouse lh = newLH.GetComponent<LightHouse>();
        
         lh.lhData = lightHouseData[(int)type];

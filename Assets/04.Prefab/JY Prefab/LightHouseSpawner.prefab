@@ -47,11 +47,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78989c7c68708cd46954ceaa60af37a9, type: 2}
   - {fileID: 11400000, guid: 331570cdd2bec3d478fb8c86ec79b247, type: 2}
   - {fileID: 11400000, guid: b19e910e49fdd384fa14a7f984794b79, type: 2}
+  serverloader: {fileID: 0}
   lhPrefab: {fileID: 6737311267780435598, guid: e59c97c7f0670474d8d2b75307b02f35, type: 3}
   lightHousePos:
-  - {x: 35, y: 0, z: 0}
-  - {x: -35, y: 0, z: 0}
-  - {x: 0, y: 0, z: 50}
+  - {x: 300, y: 0, z: 0}
+  - {x: -300, y: 0, z: 0}
+  - {x: 0, y: 0, z: 450}
   lightHouseRot:
   - {x: 0, y: 0.17364818, z: 0, w: 0.9848077}
   - {x: 0, y: 0.34202012, z: 0, w: 0.9396926}

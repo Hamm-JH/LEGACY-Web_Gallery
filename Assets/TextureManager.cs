@@ -62,8 +62,21 @@ public class TextureManager : MonoBehaviour
         
         for (int i = 0; i < WorldChild(); i++)
         {
-            int num = i + 481;
-            texturePath.Add("texture/" + num);
+            int num = i+1;
+            Debug.Log("num now :"+num);
+            if(i<9)
+            {
+                texturePath.Add("texture/00" + num);
+            }
+            if(9<=i && i<99)
+            {
+                texturePath.Add("texture/0" + num);
+            }
+            if(99<=i)
+            {
+                texturePath.Add("texture/" + num);
+            }
+           
             Debug.Log("pass");
             // worldTextures.Add(Resources.Load(texturePath[i], typeof(Texture)) as Texture);
            
