@@ -18,43 +18,7 @@ MonoBehaviour:
   m_GUID: 12577c07ab2de8f4bb0c334650a46683
   m_SerializeEntries:
   - m_GUID: b7b3c1f146a24ea449e64dc38072e155
-    m_Address: Assets/04.Prefab/JY Prefab/Addressable Loader.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: cb626800c42aa504e95d27a99083a7d4
-    m_Address: InfoCanvas
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b5aaa0a2cdb98b44b873cc2ea788f6bc
-    m_Address: ChainGroup
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b97d4a1be75cb924984669dcad4a3984
-    m_Address: Canvas_02
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 2a9e69121aabe2a4db44d08187493e13
-    m_Address: reflection
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 03cb8880a149ddf44a15703727cc0762
-    m_Address: LightHouseSpawner
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: fed4b8aa9a85f994d92715fa8b346b88
-    m_Address: World_Final
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 5392984f077deff4883162b6655588e2
-    m_Address: MoveArea2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 51cf9f8da0b48a744abfe90659dd2eec
-    m_Address: MoveArea
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e581d6ae491b0f945a45281888e63ac4
-    m_Address: MoveArea3
+    m_Address: AddressableLoader
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

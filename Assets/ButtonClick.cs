@@ -25,11 +25,13 @@ public class ButtonClick : MonoBehaviour
         {
             image.SetActive(true);
             isClicked = false;
+            Debug.Log("image open" + image.activeSelf);
         }
         else
         {
             image.SetActive(false);
             isClicked = true;
+            Debug.Log("image open" + image.activeSelf);
         }
        
     }
