@@ -32,6 +32,7 @@ public class ServerLoaderTest : MonoBehaviour
 
     public void _Click_BundleDown()
     {
+        //Addressables.LoadResourceLocationsAsync("").Result.Count
         Addressables.DownloadDependenciesAsync(LableForBundleDown).Completed +=
             (AsyncOperationHandle handle) =>
             {
