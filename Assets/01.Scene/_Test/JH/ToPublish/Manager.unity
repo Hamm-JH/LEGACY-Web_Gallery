@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  baseAudio: {fileID: 8300000, guid: faa88131b8223b94a814de1560f3baaa, type: 3}
+  baseAudio: {fileID: 8300000, guid: b5e850950e766be459a32f09eac135aa, type: 3}
 --- !u!1 &334034734
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  baseAudio: {fileID: 8300000, guid: f0bbac5d9b479be46b1dcf5faecdf0b0, type: 3}
+  baseAudio: {fileID: 8300000, guid: 4de2e98f328c80848864402824b1fb6b, type: 3}
 --- !u!1 &1500669059
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  baseAudio: {fileID: 8300000, guid: 70b95046cd667dc49aa07f9a1e53b26c, type: 3}
+  baseAudio: {fileID: 8300000, guid: 1f5210cc1a69b7b4a9fb18fb9fadb6a2, type: 3}
 --- !u!4 &3229971316902660668
 Transform:
   m_ObjectHideFlags: 0
