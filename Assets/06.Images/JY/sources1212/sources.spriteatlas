@@ -51,6 +51,7 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 705e26d02b88aa046802a4f1581f733a, type: 3}
+  - {fileID: 21300000, guid: 1408e47131f996348924fb259b04109b, type: 3}
   - {fileID: 21300000, guid: ae8cc4546cc617a42aea039b2da4d764, type: 3}
   - {fileID: 21300000, guid: 9373d5b63f4674549bc68fdb2252e70a, type: 3}
   - {fileID: 21300000, guid: bb80fdd747386524d9b55d9c7738d5dc, type: 3}
@@ -58,11 +59,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8862eb9ac67ab9444b9b872e14db26d6, type: 3}
   - {fileID: 21300000, guid: 218e359c8d8f2244b8b37c35e08e8e90, type: 3}
   - {fileID: 21300000, guid: 951316eca5ca91d4dbe2fee2bb8c7164, type: 3}
+  - {fileID: 21300000, guid: 8591766eb5dad654db4ca822f8afa285, type: 3}
   - {fileID: 21300000, guid: 080b903f558b9dd48aba6e1943e5852d, type: 3}
   - {fileID: 21300000, guid: 6c71b49fb9b11284f80921e9b2f3cc0f, type: 3}
   - {fileID: 21300000, guid: aac6759f9f29ba741a7ac6fac973566b, type: 3}
   m_PackedSpriteNamesToIndex:
   - 2nd_question
+  - info_icon 60
   - 2nd_enter
   - 3rd_icon_back1
   - 2nd_mainwriting
@@ -70,6 +73,7 @@ SpriteAtlas:
   - 3rd_icon2
   - 2nd_invitation
   - title
+  - info
   - 2nd_credit
   - intro_enter
   - 2nd_artist
