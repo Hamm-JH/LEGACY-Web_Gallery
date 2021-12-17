@@ -77,17 +77,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scene03
   - m_GUID: 1f5210cc1a69b7b4a9fb18fb9fadb6a2
-    m_Address: Assets/10.Audio/intro11.mp3
+    m_Address: backGroundSound01
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - default
   - m_GUID: b5e850950e766be459a32f09eac135aa
-    m_Address: Assets/10.Audio/intro22.mp3
+    m_Address: backGroundSound02
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - default
   - m_GUID: 4de2e98f328c80848864402824b1fb6b
-    m_Address: Assets/10.Audio/Lake22.mp3
+    m_Address: backGroundSound03
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - default
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99b9e78c87810f04d9c3ca8209f99bbc, type: 2}
   m_SchemaSet:
