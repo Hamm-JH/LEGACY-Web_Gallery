@@ -10,11 +10,14 @@ namespace Test
 	public class AddTest : MonoBehaviour
 	{
 		public AssetReference baseCube;
+		public AssetReferenceAtlasedSprite addSprite;
+
 
 		// Start is called before the first frame update
 		void Start()
 		{
 			baseCube.InstantiateAsync().Completed += OnCompleted;
+			
 		}
 
 		// Update is called once per frame
