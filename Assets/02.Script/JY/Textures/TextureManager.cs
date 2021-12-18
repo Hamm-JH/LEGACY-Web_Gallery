@@ -124,6 +124,22 @@ namespace Textures
 			//obj.GetComponent<MeshRenderer>().material.mainTexture = importedTexture.Result;
 		}
 
+		public void SetTextureTest()
+		{
+
+			for (int i = 0; i < worldChildIndex; i++)
+			{
+				if (i == 0)
+				{
+					worldArray[i].GetComponent<MeshRenderer>().material.mainTexture = worldTextures[i];
+				}
+				else
+				{
+					worldArray[i].GetComponent<MeshRenderer>().material.mainTexture = worldTextures[i];
+				}
+
+			}
+		}
 		private void OnDestroy()
 		{
 			Destroy(instance);
