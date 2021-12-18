@@ -260,7 +260,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseCube:
-    m_AssetGUID: 066629e8e190c1145bb0873a7ec61f3e
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  addSprite:
+    m_AssetGUID: 
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

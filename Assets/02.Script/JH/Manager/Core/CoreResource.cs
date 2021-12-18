@@ -42,5 +42,10 @@ namespace Management.Core
 		/// 현재 씬을 나타내는 열거변수
 		/// </summary>
 		public Def.SceneName currentScene;
+
+		/// <summary>
+		/// 프로그레스바
+		/// </summary>
+		public Michsky.UI.ModernUIPack.ProgressBar progressbar;
 	}
 }

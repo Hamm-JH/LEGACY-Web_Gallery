@@ -32,6 +32,8 @@ namespace Michsky.UI.ModernUIPack
 
         void Update()
         {
+            loadingBar.fillAmount = currentPercent / maxValue;
+
             if (isOn == true)
             {
                 if (currentPercent <= maxValue && invert == false)

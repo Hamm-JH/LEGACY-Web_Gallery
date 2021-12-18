@@ -16,14 +16,9 @@ namespace Test
 		// Start is called before the first frame update
 		void Start()
 		{
-			baseCube.InstantiateAsync().Completed += OnCompleted;
-			
-		}
+			//baseCube.InstantiateAsync().Completed += OnCompleted;
+			Addressables.InstantiateAsync("Cube", new Vector3(0, 0, 0), Quaternion.identity);
 
-		// Update is called once per frame
-		void Update()
-		{
-			
 		}
 
 		void OnCompleted<T>(AsyncOperationHandle<T> _inst)
