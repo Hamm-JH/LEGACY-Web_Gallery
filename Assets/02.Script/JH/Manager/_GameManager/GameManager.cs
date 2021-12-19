@@ -33,6 +33,7 @@ namespace Management
 
 		[Header("Animator Controllable Value")]
 		public float audioVolume;
+		private bool volumeUpdate;
 
 		/// <summary>
 		/// 범용 리소스 모음
@@ -126,7 +127,7 @@ namespace Management
 				// 일반 :: 앱 실행중 씬 변경시 Fade in 실행. 후 ChangeProcess로 진입
 				if (request.optionIndex != 99)
 				{
-					OnFadeIn();
+					OnFadeIn(sName);
 				}
 				// 99 option :: 앱 초기 실행시, Fade in을 거치지 않고 바로 ChangeProcess로 진입한다. (깜빡임 방지)
 				else
@@ -163,7 +164,10 @@ namespace Management
 
 		private void Update()
 		{
-			
+			if(volumeUpdate)
+			{
+				//core.mainAudio.volume =
+			}
 		}
 	}
 }

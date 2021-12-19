@@ -7,10 +7,21 @@ namespace Management
 	public partial class GameManager : Manager
 	{
 		#region Ready Fade in
-		private void OnFadeIn()
+		private void OnFadeIn(Def.SceneName _sceneName)
 		{
+			// 볼륨 업데이트 시작
+			volumeUpdate = true;
 			// 페이드인 진행시 애니메이터에서 IsFadeOut = false로 변경
 			core.animator.SetBool("IsFadeOut", false);
+
+			if(_sceneName == Def.SceneName.Scene03)
+			{
+				core.animator.SetBool("IsThirdScene", true);
+			}
+			else
+			{
+				core.animator.SetBool("IsThirdScene", false);
+			}
 		}
 
 		private void ReadyToFadeIn()
@@ -37,6 +48,9 @@ namespace Management
 		/// </summary>
 		private void OnFadeOut()
 		{
+			// 볼륨 업데이트 끝
+			volumeUpdate = false;
+
 			// 페이드 아웃 진행시 애니메이터에서 IsFadeOut = true로 변경
 			core.progressbar.isOn = false;
 			core.animator.SetBool("IsFadeOut", true);
