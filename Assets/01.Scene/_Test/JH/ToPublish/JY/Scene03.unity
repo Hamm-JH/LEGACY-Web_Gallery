@@ -322,25 +322,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContentManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
-      propertyPath: contentData.id
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
-      propertyPath: contentData.canvasList.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 162.4
+      value: 20.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688414150960172660, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688414152278895802, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5688414152278895802, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
@@ -480,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1997296041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1313,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4590024313839836567, guid: fed4b8aa9a85f994d92715fa8b346b88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4590024313839836567, guid: fed4b8aa9a85f994d92715fa8b346b88, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1506,7 +1518,7 @@ MonoBehaviour:
   mieDistance: 1
   scattering: 0.351
   luminance: 0
-  exposure: 1.29
+  exposure: 1.68
   rayleighColor: {r: 0.6154672, g: 0.47986495, b: 1, a: 1}
   mieColor: {r: 1, g: 0.40522993, b: 0.029540818, a: 1}
   scatteringColor: {r: 1, g: 0, b: 0, a: 1}
