@@ -477,7 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightHouse: {fileID: 0}
   eventCode: 10
-  linkURL: https://artdelivery.kr/
+  linkURL: https://artdelivery.kr/gallery/999and1/
   targetScene: 0
 --- !u!1 &2549105552225384633
 GameObject:
@@ -1630,7 +1630,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 12.75
-  MaxDistance: 250
+  MaxDistance: 600
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
