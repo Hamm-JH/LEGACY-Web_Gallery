@@ -118,10 +118,10 @@ namespace Management
 				prevRequest = currRequest;
 				core.currentScene = prevRequest.sceneName;  // 업데이트된 씬 상태를 저장한다.
 
-				// 프로그레스바 리셋
-				core.progressbar.currentPercent = 0;
+				ReadyToFadeIn();
+
 				// 일반 :: 앱 실행중 씬 변경시 Fade in 실행. 후 ChangeProcess로 진입
-				if(request.optionIndex != 99)
+				if (request.optionIndex != 99)
 				{
 					OnFadeIn();
 				}

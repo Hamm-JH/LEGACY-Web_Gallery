@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPercent: 0
-  speed: 5
+  speed: 30
   maxValue: 100
   loadingBar: {fileID: 3381162856519986839}
   textPercent: {fileID: 3381162857823893803}
@@ -879,6 +879,7 @@ MonoBehaviour:
   restart: 0
   invert: 0
   isPercent: 1
+  isCompleted: 0
 --- !u!222 &3381162855952444339
 CanvasRenderer:
   m_ObjectHideFlags: 0

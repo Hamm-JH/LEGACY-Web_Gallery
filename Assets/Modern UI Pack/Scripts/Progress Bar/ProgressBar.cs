@@ -21,6 +21,8 @@ namespace Michsky.UI.ModernUIPack
         public bool invert;
         public bool isPercent = true;
 
+        public bool isCompleted;
+
         void Start()
         {
             if (isOn == false)
@@ -32,8 +34,6 @@ namespace Michsky.UI.ModernUIPack
 
         void Update()
         {
-            loadingBar.fillAmount = currentPercent / maxValue;
-
             if (isOn == true)
             {
                 if (currentPercent <= maxValue && invert == false)
@@ -52,6 +52,19 @@ namespace Michsky.UI.ModernUIPack
                     textPercent.text = ((int)currentPercent).ToString("F0") + "%";
                 else
                     textPercent.text = ((int)currentPercent).ToString("F0");
+
+                Debug.Log("-------------------------");
+                Debug.Log($"currentPercent : {currentPercent}");
+                Debug.Log($"maxValue : {maxValue}");
+                Debug.Log($"current / max : {currentPercent / maxValue}");
+                Debug.Log($"load.fillam : {loadingBar.fillAmount}");
+
+                if(loadingBar.fillAmount == 1 && !isCompleted)
+				{
+                    isOn = false;
+                    isCompleted = true;
+                    Management.GameManager.Instance.LoadSceneComplete();
+				}
             }
         }
 

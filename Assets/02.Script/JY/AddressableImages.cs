@@ -28,22 +28,36 @@ public class AddressableImages : MonoBehaviour
         //yield return new WaitForSeconds(6);
         // Option A) Load atlas & take a sprite
         //  var asyncOperationHandle = addressableSprite.LoadAssetAsync<Sprite>();
+        var asyncOperationHandle = Addressables.LoadAssetAsync<Texture2D>("Assets/Resources_moved/texture/002.jpg");
+        asyncOperationHandle.Completed += (AsyncOperationHandle<Texture2D> tex) =>
+        {
+            texture = tex.Result;
+            transform.GetComponent<MeshRenderer>().material.mainTexture = texture;
+        };
 
         // Option B) Addressable asset key + subasset selection
-        var asyncOperationHandle = Addressables.LoadAssetAsync<Sprite>("Atlas[001]");
+        //Addressables.LoadAssetAsync<Sprite>("Atlas[001]").Completed += (AsyncOperationHandle<Sprite> spr) => {
+        //    texture = spr.Result.texture;
+		//};
 
-        yield return asyncOperationHandle;
-        image.sprite = asyncOperationHandle.Result;
-        Debug.Log("asyncOperationHandle" + image.sprite);
+        yield break;
 
 
-        texture = ConvertSpriteToTexture2D(image.sprite);
-        tm.worldTextures[0] = texture;
-        tm.SetTextureTest();
-        // Release at some point
-        // yield return new WaitForSeconds(6);
-        image.sprite = null;
-        Addressables.Release(asyncOperationHandle);
+        //yield return asyncOperationHandle;
+
+        //image.sprite = asyncOperationHandle.Result;
+        //Debug.Log("asyncOperationHandle" + image.sprite);
+
+
+        //texture = ConvertSpriteToTexture2D(image.sprite);
+
+
+        //tm.worldTextures[0] = texture;
+        //tm.SetTextureTest();
+        //// Release at some point
+        //// yield return new WaitForSeconds(6);
+        //image.sprite = null;
+        //Addressables.Release(asyncOperationHandle);
     }
 
 

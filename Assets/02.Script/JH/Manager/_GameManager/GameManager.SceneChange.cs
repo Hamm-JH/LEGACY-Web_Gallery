@@ -13,6 +13,16 @@ namespace Management
 			core.animator.SetBool("IsFadeOut", false);
 		}
 
+		private void ReadyToFadeIn()
+		{
+			//if (isFirst) core.progressbar.isOn = isFirst;
+			//else core.progressbar.isOn = true;
+
+			core.progressbar.isOn = true;
+			core.progressbar.isCompleted = false;
+			core.progressbar.currentPercent = 0;
+		}
+
 		private void EndFadeIn()
 		{
 			// 카메라 원상복귀

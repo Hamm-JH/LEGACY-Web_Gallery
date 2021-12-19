@@ -40,13 +40,13 @@ namespace Management
 					break;
 			}
 
-			LoadSceneComplete();
+			//LoadSceneComplete();
 		}
 
 		/// <summary>
 		/// 씬 생성 완료시 실행
 		/// </summary>
-		private void LoadSceneComplete()
+		public void LoadSceneComplete()
 		{
 			OnFadeOut();
 		}
