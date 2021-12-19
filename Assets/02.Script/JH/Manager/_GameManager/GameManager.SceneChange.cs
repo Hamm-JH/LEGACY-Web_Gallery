@@ -57,6 +57,12 @@ namespace Management
 			
 		}
 
+		private void EndFadeOut()
+		{
+			// Scene03 업데이트
+			content.OnLoadComplete();
+		}
+
 		public void TurnOffProgressBar()
         {
 			

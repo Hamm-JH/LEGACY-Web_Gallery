@@ -41,6 +41,14 @@ namespace Management
 		public Data _Data { get => contentData; set => contentData=value; }
 		#endregion
 
+		#region Scene 03
+
+		[Header("Scene 03")]
+		[SerializeField] Animator animator03;
+		[SerializeField] Image image03;
+
+		#endregion
+
 		private void Awake()
 		{
 			if(instance != null)
@@ -69,49 +77,6 @@ namespace Management
 				center);
 			Ray2D ray2 = new Ray2D(mp, Vector2.zero);
 			RaycastHit2D _hit = Physics2D.Raycast(ray2.origin, ray2.direction);
-
-			{
-				// (임시) :: 씬 이동 예제
-				//if (Input.GetKeyDown(KeyCode.Space))
-				//{
-				//	if (_Data.ID == Def.SceneName.Scene01)
-				//	{
-				//		OnSceneChange(new Scene.Request
-				//		{
-				//			sceneName = Def.SceneName.Scene02,
-				//			optionIndex = 1
-				//		});
-				//	}
-				//	else if (_Data.ID == Def.SceneName.Scene02)
-				//	{
-				//		OnSceneChange(new Scene.Request
-				//		{
-				//			sceneName = Def.SceneName.Scene01,
-				//			optionIndex = 0
-				//		});
-				//	}
-				//}
-
-				// 커서 관리 예제
-				//if (Input.GetMouseButtonDown(0))
-				//{
-				//	Cursor.lockState = CursorLockMode.Locked;
-				//	Cursor.lockState = CursorLockMode.Confined;
-				//	Cursor.visible = true;
-				//}
-				//else if(Input.GetMouseButton(0))
-				//{
-				//	Cursor.lockState = CursorLockMode.Locked;
-				//	Cursor.lockState = CursorLockMode.None;
-				//	Cursor.visible = true;
-				//}
-				//else
-				//{
-				//	Cursor.lockState = CursorLockMode.Locked;
-				//	//Cursor.lockState = CursorLockMode.Confined;
-				//	Cursor.visible = true;
-				//}
-			}
 		}
 
 		//----- event

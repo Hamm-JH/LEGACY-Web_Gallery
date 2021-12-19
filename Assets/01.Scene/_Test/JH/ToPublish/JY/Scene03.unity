@@ -415,6 +415,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContentManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: image03
+      value: 
+      objectReference: {fileID: 1915557173}
+    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: animator03
+      value: 
+      objectReference: {fileID: 1624205535}
+    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: contentData.id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362657969204657621, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: contentData.canvasList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5362657969358339151, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.4
@@ -743,7 +759,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915557171}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
