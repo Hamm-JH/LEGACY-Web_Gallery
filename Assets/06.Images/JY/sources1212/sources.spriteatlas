@@ -52,8 +52,9 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 705e26d02b88aa046802a4f1581f733a, type: 3}
   - {fileID: 21300000, guid: 1408e47131f996348924fb259b04109b, type: 3}
-  - {fileID: 21300000, guid: ae8cc4546cc617a42aea039b2da4d764, type: 3}
+  - {fileID: 21300000, guid: a53f982574a610449a13d3aea4250cdc, type: 3}
   - {fileID: 21300000, guid: 9373d5b63f4674549bc68fdb2252e70a, type: 3}
+  - {fileID: 21300000, guid: 5093b4d72df9cf846a25393d77d1f668, type: 3}
   - {fileID: 21300000, guid: bb80fdd747386524d9b55d9c7738d5dc, type: 3}
   - {fileID: 21300000, guid: c249acb86331e7a4cbcc5872377623e7, type: 3}
   - {fileID: 21300000, guid: 8862eb9ac67ab9444b9b872e14db26d6, type: 3}
@@ -68,6 +69,7 @@ SpriteAtlas:
   - info_icon 60
   - 2nd_enter
   - 3rd_icon_back1
+  - 3rd_request
   - 2nd_mainwriting
   - 3rd_icon_play
   - 3rd_icon2
