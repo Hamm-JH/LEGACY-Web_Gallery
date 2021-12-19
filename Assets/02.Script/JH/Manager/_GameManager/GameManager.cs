@@ -31,6 +31,9 @@ namespace Management
 
 		#endregion
 
+		[Header("Animator Controllable Value")]
+		public float audioVolume;
+
 		/// <summary>
 		/// 범용 리소스 모음
 		/// </summary>
@@ -158,6 +161,9 @@ namespace Management
 			core.animator.SetBool("IsStart", true);
 		}
 
-		
+		private void Update()
+		{
+			
+		}
 	}
 }

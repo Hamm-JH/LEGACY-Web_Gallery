@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  maxVolume: 1
   baseAudio: {fileID: 8300000, guid: b5e850950e766be459a32f09eac135aa, type: 3}
 --- !u!1 &334034734
 GameObject:
@@ -354,6 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  maxVolume: 0.2
   baseAudio: {fileID: 8300000, guid: 4de2e98f328c80848864402824b1fb6b, type: 3}
 --- !u!1 &1500669059
 GameObject:
@@ -536,6 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba11595b728518448abf3117db8f7166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioVolume: 0
   core:
     character: {fileID: 0}
     animator: {fileID: 2047246043}
@@ -613,6 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  maxVolume: 1
   baseAudio: {fileID: 8300000, guid: 1f5210cc1a69b7b4a9fb18fb9fadb6a2, type: 3}
 --- !u!4 &3229971316902660668
 Transform:

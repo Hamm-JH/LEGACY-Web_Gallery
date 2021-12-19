@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.097448364, g: 0.1354262, b: 0.18848166, a: 1}
+  m_IndirectSpecularColor: {r: 0.06499747, g: 0.079857096, b: 0.14942174, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5688414152278895804, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6702a49bd8d76c14f9bd0000d02465ec, type: 3}
 --- !u!114 &1096530453 stripped
@@ -377,6 +381,14 @@ PrefabInstance:
     - target: {fileID: 8731603127051371136, guid: fa71591864294ad4aaf7200de085ec3d, type: 3}
       propertyPath: m_Name
       value: ReflectionRenderer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731603127051371137, guid: fa71591864294ad4aaf7200de085ec3d, type: 3}
+      propertyPath: _settings.farClipPlane
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731603127051371137, guid: fa71591864294ad4aaf7200de085ec3d, type: 3}
+      propertyPath: _settings.nearClipPlane
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8731603127051371138, guid: fa71591864294ad4aaf7200de085ec3d, type: 3}
       propertyPath: m_RootOrder

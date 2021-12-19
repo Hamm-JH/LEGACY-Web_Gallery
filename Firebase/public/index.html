@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ArtDelivery</title>
+    <title>Art Delivery | 999 and 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <div class="webgl-content">
+      <canvas id="unity-canvas" width=100% height=100% style="width: 100%; height: 100%; background: #231F20"></canvas>
+    </div>
     <script src="Build/public.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -22,8 +25,8 @@
         frameworkUrl: "Build/public.framework.js.unityweb",
         codeUrl: "Build/public.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "SosanStudio",
-        productName: "ArtDelivery",
+        companyName: "DefaultCompany",
+        productName: "Web_Gallery",
         productVersion: "0.1",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
