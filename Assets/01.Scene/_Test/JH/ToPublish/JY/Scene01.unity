@@ -40759,6 +40759,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: InfoCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8961700262143815060, guid: cb626800c42aa504e95d27a99083a7d4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961700262143815060, guid: cb626800c42aa504e95d27a99083a7d4, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961700262143815060, guid: cb626800c42aa504e95d27a99083a7d4, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 8961700262143815062, guid: cb626800c42aa504e95d27a99083a7d4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
