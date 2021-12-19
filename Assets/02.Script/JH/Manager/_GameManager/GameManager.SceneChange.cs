@@ -38,7 +38,14 @@ namespace Management
 		private void OnFadeOut()
 		{
 			// 페이드 아웃 진행시 애니메이터에서 IsFadeOut = true로 변경
+			core.progressbar.isOn = false;
 			core.animator.SetBool("IsFadeOut", true);
+			
 		}
+
+		public void TurnOffProgressBar()
+        {
+			
+        }
 	}
 }
